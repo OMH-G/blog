@@ -54,7 +54,7 @@ const Body = () => {
                   transition={{ duration: 0.6, delay: 1 }}
                   className="leading-relaxed mb-5"
                 >
-                  <a href="/post" className='text-blue-500'>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</a>
+                  <Link to="/post" className='text-blue-500'>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</Link>
                 </motion.p>
                 <motion.a
                   initial={{ opacity: 0, y: 10 }}
