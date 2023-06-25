@@ -11,7 +11,7 @@ export default function App() {
       <Router>
         <Header />
         <Routes basename="/blog">
-          <Route exact path="/" element={
+          <Route exact path="/blog" element={
             <div className="container mx-auto flex flex-col min-h-screen">
               <div className="flex-grow">
                 <Body />
