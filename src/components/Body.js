@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 const Body = () => {
   return (
     <section className="text-gray-600 body-font  ">
@@ -53,7 +54,7 @@ const Body = () => {
                   transition={{ duration: 0.6, delay: 1 }}
                   className="leading-relaxed mb-5"
                 >
-                  Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
+                  <a href="/post" className='text-blue-500'>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</a>
                 </motion.p>
                 <motion.a
                   initial={{ opacity: 0, y: 10 }}
