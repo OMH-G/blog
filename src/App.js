@@ -10,16 +10,15 @@ export default function App() {
     <>
       <Router>
         <Header />
-        <Routes basename="/blog">
-          <Route exact path="/blog" element={
-            <div className="container mx-auto flex flex-col min-h-screen">
-              <div className="flex-grow">
-                <Body />
-              </div>
-            </div>} />
-          <Route exact path="/home" Component={Home} />
-          <Route exact path="/about" Component={About} />
-        </Routes>
+        <div className="container mx-auto flex flex-col min-h-screen ">
+          <div className="flex-grow">
+            <Routes basename="/blog">
+              <Route exact path="/blog" Component={Body} />
+              <Route exact path="/blog" Component={Home} />
+              <Route exact path="/about" Component={About} />
+            </Routes>
+          </div>
+        </div>
         <Footer />
       </Router>
     </>
