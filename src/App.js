@@ -8,19 +8,19 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 export default function App() {
   return (
     <>
-    <Router>
-      <Header />
-      <Routes basename="/blog">
-      <Route exact path="/" element={
-      <div className="container mx-auto flex flex-col min-h-screen">
-        <div className="flex-grow">
-          <Body />
-        </div>
-          <Footer />
-      </div>}/>
-        <Route exact path="/home" Component={Home}/>
-        <Route exact path="/about" Component={About}/>
-      </Routes>
+      <Router>
+        <Header />
+        <Routes basename="/blog">
+          <Route exact path="/" element={
+            <div className="container mx-auto flex flex-col min-h-screen">
+              <div className="flex-grow">
+                <Body />
+              </div>
+            </div>} />
+          <Route exact path="/home" Component={Home} />
+          <Route exact path="/about" Component={About} />
+        </Routes>
+        <Footer />
       </Router>
     </>
   )
