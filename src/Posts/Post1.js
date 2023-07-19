@@ -1,9 +1,8 @@
 import React, { useRef, useState } from 'react';
-
-const Post1 = () => {
+const Post1 = (props) => {
   const codeRef = useRef(null);
   const [isCopied, setIsCopied] = useState(false);
-
+  
   const handleCopy = () => {
     const codeElement = codeRef.current;
     if (codeElement) {
@@ -14,10 +13,11 @@ const Post1 = () => {
   };
 
   return (
+    <>
     <div className="container mx-auto py-8">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold mb-4">Advanced Blog Post</h1>
-        <p className="text-gray-600 mb-8">Written by John Doe | June 23, 2023</p>
+        <p className="text-gray-600 mb-8" >Written by John Doe | June 23, 2023</p>
 
         <div className="prose">
           {/* Blog post content goes here */}
@@ -32,7 +32,7 @@ const Post1 = () => {
           <div className="my-8">
             <h3 className="text-xl font-bold mb-4">Code Snippet</h3>
             <pre className="bg-gray-100 p-4 rounded-lg relative">
-              <code ref={codeRef} className="language-javascript">
+              <code className="language-javascript">
                 {/* Your code snippet goes here */}
                 const greeting = 'Hello, World!';
                 console.log(greeting);
@@ -65,6 +65,8 @@ const Post1 = () => {
         </div>
       </div>
     </div>
+
+    </>
   );
 };
 
